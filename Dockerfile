@@ -9,11 +9,8 @@ ADD . /app
 
 # Define environment variable
 ENV NAME World
-ENV http_proxy ironweb1.it-tallaght.ie:80
-ENV https_proxy ironweb1.it-tallaght.ie:80
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --cert /home/epa/ironweb1.it-tallaght.ie.crt --user --trusted-host pypi.python.org -r requirements.txt
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
